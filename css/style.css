@@ -1,0 +1,14 @@
+body {
+    overflow: hidden;
+    overflow-y: scroll;
+    background-color:lightgray !important;
+}
+
+table , .consulta{
+    margin: 30px;
+    display: inline-block;
+}
+
+h3 {
+    margin-left: 150px;
+}
