@@ -6,31 +6,17 @@ class NavegacionView extends View {
     $this->smarty->display('templates/home.tpl');
   }
 
-  function User(){
-    $this->smarty->display('templates/user.tpl');
+  function ConsultaCliente(){
+    $this->smarty->display('templates/consultacliente.tpl');
   }
 
-  function Register(){
-    $this->smarty->display('templates/register.tpl');
+  function ConsultaFecha(){
+    $this->smarty->display('templates/consultafecha.tpl');
   }
 
-  function errorFormRegistro($error = '')
-    {
-      $this->smarty->assign('error', $error);
-      return $this->smarty->display('templates/register.tpl');
-    }
-
-  function errorFormReporte($error = '')
-    {
-      $this->smarty->assign('error', $error);
-      return $this->smarty->display('templates/user.tpl');
-    }
-
-    function mapaAdmin($reportes){
-      $this->smarty->assign('reportes', $reportes);
-      $this->smarty->display('templates/mapaAdmin.tpl');
-    }
-
+  function ConsultaVencimiento(){
+    $this->smarty->display('templates/consultavencimiento.tpl');
+  } 
 }
 
- ?>
+?>

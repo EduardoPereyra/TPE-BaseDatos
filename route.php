@@ -3,21 +3,22 @@
 //Incluimos el archivo de configuracion
 require_once 'config/Router.php';
 require_once 'config/db-config.php';
-require_once 'model/Model.php';
 require_once 'view/View.php';
 require_once 'controller/Controller.php';
 require_once 'controller/NavegacionController.php';
 
 $router = new Router();
 
-$router->AddRoute("", "GET", "NavegacionController", "Home");
-$router->AddRoute("home", "GET", "NavegacionController", "Home");
-$router->AddRoute("register", "GET", "NavegacionController", "Register");
+$router->AddRoute("", "GET", "NavegacionController", "ConsultaCliente");
+$router->AddRoute("home", "GET", "NavegacionController", "ConsultaCliente");
+$router->AddRoute("consultacliente", "GET", "NavegacionController", "ConsultaCliente");
+$router->AddRoute("consultafecha", "GET", "NavegacionController", "ConsultaFecha");
+$router->AddRoute("consultavencimiento", "GET", "NavegacionController", "ConsultaVencimiento");
 
 $route = $_GET['action'];
 $array = $router->Route($route);
 if(sizeof($array) == 0)
-    echo (new NavegacionController())->home();
+    echo (new NavegacionController())->Home();
 else
 {
     $controller = $array[0];

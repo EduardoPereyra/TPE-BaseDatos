@@ -4,11 +4,28 @@ body {
     background-color:lightgray !important;
 }
 
-table , .consulta{
+table, .consulta {
     margin: 30px;
-    display: inline-block;
 }
 
 h3 {
     margin-left: 150px;
+}
+
+.tablas {
+    display: inline-block;
+}
+
+.consulta {
+    margin-right: 70%;
+}
+
+.anio {
+    padding-right: 50px !important;
+}
+
+.titulos{
+    display:inline;
+    margin-left: 0px !important;
+
 }

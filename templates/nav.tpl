@@ -8,9 +8,9 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav ml-auto">
-                  <a class="nav-item nav-link active" href=""><i class="fas fa-home"></i> Home</a>
-                  <a class="nav-item nav-link" href=""><i class="fas fa-building"></i>*Insertar Texto*</a>
-                  <a class="nav-item nav-link" href=""><i class="fas fa-envelope"></i>*Insertar Texto*</a>
+                  <a class="nav-item nav-link active" href="consultacliente"><i class="fas fa-home"></i> Consulta Cliente</a>
+                  <a class="nav-item nav-link" href="consultafecha"><i class="fas fa-building"></i>Consulta Fecha</a>
+                  <a class="nav-item nav-link" href="consultavencimiento"><i class="fas fa-envelope"></i>Consulta Vencimiento</a>
               </div>
           </div>
       </div>

@@ -41,12 +41,13 @@ insert into gr20_pallet (cod_pallet, descripcion, peso) values (4, 'Integer tinc
 insert into gr20_pallet (cod_pallet, descripcion, peso) values (5, 'Praesent lectus. Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio.', 98.13);
 
 --alquiler
-insert into gr20_alquiler (id_alquiler, id_cliente, fecha_desde, fecha_hasta, importe_dia) values (1, 5, '2018/02/14', '2016/08/27', 1.32);
-insert into gr20_alquiler (id_alquiler, id_cliente, fecha_desde, fecha_hasta, importe_dia) values (2, 2, '2019/05/09', '2017/09/27', 6.96);
-insert into gr20_alquiler (id_alquiler, id_cliente, fecha_desde, fecha_hasta, importe_dia) values (3, 1, '2018/02/15', '2017/01/24', 2.61);
-insert into gr20_alquiler (id_alquiler, id_cliente, fecha_desde, fecha_hasta, importe_dia) values (4, 2, '2015/02/23', '2015/01/29', 8.05);
-insert into gr20_alquiler (id_alquiler, id_cliente, fecha_desde, fecha_hasta, importe_dia) values (5, 4, '2017/02/21', '2018/04/12', 4.6);
-
+insert into gr20_alquiler (id_alquiler, id_cliente, fecha_desde, fecha_hasta, importe_dia) values (1, 5, '2016-08-27', '2018-02-14', 1.32);
+insert into gr20_alquiler (id_alquiler, id_cliente, fecha_desde, fecha_hasta, importe_dia) values (2, 2, '2017-09-27', '2019-05-09', 6.96);
+insert into gr20_alquiler (id_alquiler, id_cliente, fecha_desde, fecha_hasta, importe_dia) values (3, 1, '2017-01-24', '2018-02-15', 2.61);
+insert into gr20_alquiler (id_alquiler, id_cliente, fecha_desde, fecha_hasta, importe_dia) values (4, 2, '2015-01-29', '2015-02-23', 8.05);
+insert into gr20_alquiler (id_alquiler, id_cliente, fecha_desde, fecha_hasta, importe_dia) values (5, 4, '2017-02-21', '2018-04-12', 4.60);
+insert into gr20_alquiler (id_alquiler, id_cliente, fecha_desde, fecha_hasta, importe_dia) values (6, 3, '2018-08-21', '2020-04-12', 10.65);
+insert into gr20_alquiler (id_alquiler, id_cliente, fecha_desde, fecha_hasta, importe_dia) values (7, 3, '2018-09-21', '2020-04-12', 9.02);
 --movimiento
 --entrada
 insert into gr20_movimiento (id_movimiento, fecha, responsable, tipo) values (1, '2017/11/26', 'Hartley Barnfather', 'e');

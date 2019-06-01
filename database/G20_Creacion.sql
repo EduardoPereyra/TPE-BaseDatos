@@ -159,11 +159,13 @@ ALTER TABLE unc_249087.gr20_posicion OWNER TO unc_249087;
 -- Data for Name: gr20_alquiler; Type: TABLE DATA; Schema: unc_249087; Owner: unc_249087
 --
 
-INSERT INTO unc_249087.gr20_alquiler VALUES (1, 5, '2018-02-14', '2016-08-27', 1.32);
-INSERT INTO unc_249087.gr20_alquiler VALUES (2, 2, '2019-05-09', '2017-09-27', 6.96);
-INSERT INTO unc_249087.gr20_alquiler VALUES (3, 1, '2018-02-15', '2017-01-24', 2.61);
-INSERT INTO unc_249087.gr20_alquiler VALUES (4, 2, '2015-02-23', '2015-01-29', 8.05);
+INSERT INTO unc_249087.gr20_alquiler VALUES (1, 5, '2016-08-27', '2018-02-14', 1.32);
+INSERT INTO unc_249087.gr20_alquiler VALUES (2, 2, '2017-09-27', '2019-05-09', 6.96);
+INSERT INTO unc_249087.gr20_alquiler VALUES (3, 1, '2017-01-24', '2018-02-15', 2.61);
+INSERT INTO unc_249087.gr20_alquiler VALUES (4, 2, '2015-01-29', '2015-02-23', 8.05);
 INSERT INTO unc_249087.gr20_alquiler VALUES (5, 4, '2017-02-21', '2018-04-12', 4.60);
+INSERT INTO unc_249087.gr20_alquiler VALUES (6, 3, '2018-08-21', '2020-04-12', 10.65);
+INSERT INTO unc_249087.gr20_alquiler VALUES (7, 3, '2018-09-21', '2020-04-12', 9.02);
 
 
 --

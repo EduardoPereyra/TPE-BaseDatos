@@ -11,17 +11,16 @@ require_once "./view/NavegacionView.php";
       $this->NavegacionView = new NavegacionView();
     }
 
-    function home(){
-      $this->NavegacionView->Home();
+    function ConsultaCliente(){
+      $this->NavegacionView->ConsultaCliente();
     }
 
-    function user(){
-      $this->NavegacionView->User();
+	function ConsultaFecha(){
+      $this->NavegacionView->ConsultaFecha();
     }
 
-    function register(){
-
-      $this->NavegacionView->Register();
+	function ConsultaVencimiento(){
+      $this->NavegacionView->ConsultaVencimiento();
     }
   }
 
