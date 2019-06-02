@@ -22,9 +22,9 @@ require_once "./model/Model.php";
       $this->View->ConsultaVencimiento();
     }
 
-	function MostrarPrueba(){
+	function ListarClientes(){
 	$clientes = $this->Model->GetClientes();
-	$this->View->MostrarPrueba($clientes);
+	$this->View->ListarClientes($clientes);
 	}
   }
 

@@ -1,24 +1,27 @@
 ﻿{include file="header.tpl"}
 {include file="nav.tpl"}
-<h3>Tablas Cargadas:</h3>
+
+<h3>Lista Clientes:</h3>
 <div class="tablas">
-    <div>
         <table class="table table-dark">
             <thead>
                 <tr>
                     <th scope="col">Cuit Cuil</th>
+					<th scope="col">Apellido</th>
                     <th scope="col">Nombre</th>
+					<th scope="col">Fecha De Alta</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    {foreach from=$Clientes item=cliente}
+                   {foreach from=$Clientes item=cliente}
                     <td>{$cliente['cuit_cuil']}</td>
-                    <td>{$cliente['nombre']}</td>
+                    <td>{$cliente['apellido']}</td>
+					<td>{$cliente['nombre']}</td>
+					<td>{$cliente['fecha_alta']}</td>
                 </tr>
                 {/foreach}
             </tbody>
         </table>
-    </div>
 </div>
 {include file="footer.tpl"}

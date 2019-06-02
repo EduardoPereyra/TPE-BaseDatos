@@ -5,7 +5,8 @@
     public static $PARAMS = 'params';
     public static $ACTIONS = [
       '' => 'NavegacionController#ConsultaCliente',
-      'consultacliente' => 'NavegacionController#MostrarPrueba',
+	  'listaclientes' => 'NavegacionController#ListarClientes',
+      'consultacliente' => 'NavegacionController#ConsultaCliente',
       'consultafecha' => 'NavegacionController#ConsultaFecha',
       'consultavencimiento' => 'NavegacionController#ConsultaVencimiento'
     ];
