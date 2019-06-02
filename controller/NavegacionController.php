@@ -1,27 +1,31 @@
 <?php
 
 require_once "./view/NavegacionView.php";
+require_once "./model/Model.php";
 
   class NavegacionController extends Controller{
-
-    private $NavegacionView;
-
     function __construct()
     {
-      $this->NavegacionView = new NavegacionView();
+      $this->View = new NavegacionView();
+	  $this->Model = new Model();
     }
 
     function ConsultaCliente(){
-      $this->NavegacionView->ConsultaCliente();
+      $this->View->ConsultaCliente();
     }
 
 	function ConsultaFecha(){
-      $this->NavegacionView->ConsultaFecha();
+      $this->View->ConsultaFecha();
     }
 
 	function ConsultaVencimiento(){
-      $this->NavegacionView->ConsultaVencimiento();
+      $this->View->ConsultaVencimiento();
     }
+
+	function MostrarPrueba(){
+	$clientes = $this->Model->GetClientes();
+	$this->View->MostrarPrueba($clientes);
+	}
   }
 
 ?>

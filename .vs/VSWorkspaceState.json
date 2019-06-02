@@ -4,11 +4,13 @@
     "\\config",
     "\\controller",
     "\\css",
+    "\\database",
     "\\images",
     "\\js",
     "\\model",
-    "\\templates_c"
+    "\\templates",
+    "\\view"
   ],
-  "SelectedNode": "\\templates",
+  "SelectedNode": "\\model\\Model.php",
   "PreviewInSolutionExplorer": false
 }

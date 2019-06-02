@@ -4,7 +4,8 @@
 
   class Controller
     {
-      protected $view;
+      protected $View;
+	  protected $Model;
     }
 
 ?>

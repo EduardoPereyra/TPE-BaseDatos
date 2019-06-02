@@ -5,14 +5,27 @@
 
       protected $db;
 
-      function __construct()
+	function __construct()
+    {
+      $this->db = $this->Connect();
+    }
 
+    function Connect(){
+		try{
+			  return new PDO('pgsql:host=dbases.exa.unicen.edu.ar;port=6432;
+			  dbname=cursada;user=unc_249087;password=');
+		}catch(PDOException $e){
+		 print "Error: ".$e->getMessage()."<br/>";
+		}
+    }
+		
+ /*     function __construct()
         {
           try
             { //le decimos al model que cuando se instancie le pegue a la base de datos
-              $this->db = new PDO('mysql:host='.DB_HOST.';'
-              .'dbname='.DB_NAME.';charset=utf8'
-              , DB_USER, DB_PASSWORD);
+              $this->db = new PDO('pgsql:host=dbases.exa.unicen.edu.ar;port=6432;'
+              .'dbname=G20_Creacion;charset=utf-8'
+              , 'unc_249087', '123456789');
             }
               catch (PDOException $e)
               {
@@ -53,7 +66,12 @@
           $queries = explode(";", $sql);
           return $queries;
         }
-
+*/
+	function GetClientes(){
+      $sentencia = $this->db->prepare("SELECT * FROM gr20_cliente");
+      $sentencia->execute();	
+      return $sentencia->fetchAll(PDO::FETCH_ASSOC);
+    }
 
     }
  ?>

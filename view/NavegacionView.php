@@ -17,6 +17,11 @@ class NavegacionView extends View {
   function ConsultaVencimiento(){
     $this->smarty->display('templates/consultavencimiento.tpl');
   } 
+
+    function MostrarPrueba($clientes){
+    $this->Smarty->assign('Clientes',$clientes);
+    $this->Smarty->display('templates/listado.tpl');
+  }
 }
 
 ?>
