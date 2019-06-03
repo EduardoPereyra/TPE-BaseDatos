@@ -6,19 +6,19 @@
         <table class="table table-dark">
             <thead>
                 <tr>
-                    <th scope="col">Cuit Cuil</th>
-					<th scope="col">Apellido</th>
-                    <th scope="col">Nombre</th>
-					<th scope="col">Fecha De Alta</th>
+                    <th scope="col">Id Alquiler</th>
+					<th scope="col">Numero de Posicion</th>
+                    <th scope="col">Numero de Fila</th>
+					<th scope="col">Numero de Estanteria</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                   {foreach from=$Clientes item=cliente}
-                    <td>{$cliente['cuit_cuil']}</td>
-                    <td>{$cliente['apellido']}</td>
-					<td>{$cliente['nombre']}</td>
-					<td>{$cliente['fecha_alta']}</td>
+                    {foreach from=$Posiciones item=posicion}
+                    <td>{$posicion['id_alquiler']}</td>
+                    <td>{$posicion['nro_posicion']}</td>
+                    <td>{$posicion['nro_fila']}</td>
+                    <td>{$posicion['nro_estanteria']}</td>
                 </tr>
                 {/foreach}
             </tbody>

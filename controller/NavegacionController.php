@@ -18,10 +18,6 @@ require_once "./model/Model.php";
       $this->View->ConsultaFecha();
     }
 
-/*	function ConsultaVencimiento(){
-      $this->View->ConsultaVencimiento();
-    }
-*/
 	function ListarClientes(){
 	$clientes = $this->Model->GetClientes();
 	$this->View->ListarClientes($clientes);
@@ -48,13 +44,6 @@ require_once "./model/Model.php";
 			$this->View->PosicionesLibresFecha($posiciones);
 		}
 	}
-	
-/*	function ClientesVencimientoDias(){
-	$dias = $_POST["dias"];
-	$clientes = $this->Model->ClientesVencimientoDias($dias);
-	$this->View->ClientesVencimientoDias($clientes);
-	}
-*/
   }
 
 ?>
