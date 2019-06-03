@@ -8,7 +8,10 @@
 	  'listaclientes' => 'NavegacionController#ListarClientes',
       'consultacliente' => 'NavegacionController#ConsultaCliente',
       'consultafecha' => 'NavegacionController#ConsultaFecha',
-      'consultavencimiento' => 'NavegacionController#ConsultaVencimiento'
+      'consultavencimiento' => 'NavegacionController#ConsultaVencimiento',
+	  'listarposicionescliente' => 'NavegacionController#ListarPosicionesCliente',
+      'posicioneslibresfecha' => 'NavegacionController#PosicionesLibresFecha'/*,
+      'clientesvencimientodias' => 'NavegacionController#ClientesVencimientoDias'*/
     ];
   }
 ?>

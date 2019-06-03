@@ -10,7 +10,8 @@ class NavegacionView extends View {
     $this->smarty->display('templates/consultacliente.tpl');
   }
 
-  function ConsultaFecha(){
+  function ConsultaFecha($Message  = ''){
+  	$this->smarty->assign('Message',$Message);
     $this->smarty->display('templates/consultafecha.tpl');
   }
 
@@ -22,5 +23,21 @@ class NavegacionView extends View {
 	$this->smarty->assign('Clientes',$Clientes);
     $this->smarty->display('templates/listado.tpl');
   }
+  	//servicios
+	function ListarPosicionesCliente($Clientes){
+	$this->smarty->assign('Clientes',$Clientes);
+    $this->smarty->display('templates/listado.tpl');
+	}
+	
+	function PosicionesLibresFecha($Posiciones){
+	$this->smarty->assign('Posiciones',$Posiciones);
+    $this->smarty->display('templates/listadoposicioneslibresfecha.tpl');
+	}
+	
+/*	function ClientesVencimientoDias($Clientes){
+	$this->smarty->assign('Clientes',$Clientes);
+    $this->smarty->display('templates/listado.tpl');
+	}
+*/
 }
 ?>
