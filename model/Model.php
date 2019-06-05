@@ -12,8 +12,8 @@
 
     function Connect(){
 		try{
-			  return new PDO('pgsql:host=dbases.exa.unicen.edu.ar;port=5432;
-			  dbname=cursada;user=unc_249087;password=123456789');
+			  return new PDO('pgsql:host=dbases.exa.unicen.edu.ar;port=6432;
+			  dbname=cursada;user=;password=');
 
 		}catch(PDOException $e){
 		 print "Error: ".$e->getMessage()."<br/>";
@@ -31,7 +31,7 @@
       $sentencia = $this->db->prepare("SELECT * 
 										FROM unc_249087.pr_gr20_cliente_posiciones(?)");
       $sentencia->execute(array($cuit_cuil));
-      return $sentencia->fetchAll(PDO::FETCH_ASSOC);
+      return $sentencia->fetchAll(PDO::FETCH_ASSOC);	
     }
 
 	function PosicionesLibresFecha($fecha){ //Servicio 2 web

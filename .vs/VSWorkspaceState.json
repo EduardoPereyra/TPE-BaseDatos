@@ -11,6 +11,6 @@
     "\\templates",
     "\\view"
   ],
-  "SelectedNode": "\\templates\\listado.tpl",
+  "SelectedNode": "\\config\\ConfigApp.php",
   "PreviewInSolutionExplorer": false
 }
